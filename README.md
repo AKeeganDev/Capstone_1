@@ -1,18 +1,19 @@
 # Portfolio
 
-> This Repo is my Capstone Project. The purpose of this project is to test my skills in CSS, HTML, and Javascript
+> This Repo is my Capstone Project. The purpose of this project is to test my skills with CSS, HTML, and Javascript
 
 specific tasks include:
 
--Utilizing Flexbox to organize and structure/style HTML elements, setting backgrounds, using image files, using custom fonts, and utilizing Javascript.
+-Utilizing Flexbox to organize the structure structure and layout of my HTML elements
+-Setting backgrounds
+-Using image files
+-Using custom fonts
+-Utilizing Javascript
 
 
 ## Built With
 
 - HTML, CSS & Javascript
-
-
-
 
 
 ## Authors
