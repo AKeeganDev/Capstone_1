@@ -1,9 +1,204 @@
 html {
   margin: 0;
   padding: 0;
+  font-family: "cocogoose", sans-sarif;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-nav {
+  background-color: #4c4d50;
+  width: 100%;
+  color: white;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav ul li {
+  font-weight: lighter;
+  font-size: 9px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.facebook-icon {
+  height: 18px;
+  width: 9px;
+  background-image: url(../img/facebook.png);
+}
+
+.twitter-icon {
+  height: 17px;
+  width: 20px;
+  background-image: url(../img/twitter.png);
+}
+
+.logo {
+  width: 130px;
+  height: 51px;
+  background-image: url(../img/Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+}
+
+.navbar {
+  background-color: white;
+  width: 100%;
+  color: #a1a1a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 2px 8px 0 #c7a8a8;
+          box-shadow: 0 2px 8px 0 #c7a8a8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem;
+  font-family: "lato", sans-sarif;
+  position: relative;
+}
+
+.nav-container {
+  background-color: white;
+  max-width: 1200px;
+  color: #a1a1a1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "lato", sans-sarif;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-container ul li {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.nav-container ul li a {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-family: "lato", sans-sarif;
+}
+
+.hamburger {
+  width: 25px;
+  height: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hamburger div {
+  height: 4px;
+  width: 100%;
+  background-color: #4c4d50;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/desktop-background.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome .welcome-container {
+  margin: 120px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome .welcome-container .intro {
+  font-family: "lato", sans-sarif;
+  color: #ec5242;
+  font-size: 36px;
+}
+
+.welcome .welcome-container .intro .mini {
+  font-size: 15px;
+}
+
+.welcome .welcome-container .hook {
+  font-size: 62px;
+  max-width: 800px;
+  background-image: url(../img/header-background.jpg);
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: rgba(255, 25, 0, 0.5);
+  margin: 15px 0;
+}
+
+.welcome .welcome-container .welcome-text {
+  background-color: #fafafb;
+  border: 4px solid white;
+  max-width: 875px;
+  font-family: "lato", sans-sarif;
+  color: #4c4d50;
+  line-height: 22px;
 }
