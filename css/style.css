@@ -240,6 +240,21 @@ body {
   }
 }
 
+@media screen and (max-width: 592px) {
+  .welcome .welcome-container #hook {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 471px) {
+  .welcome .welcome-container .intro {
+    font-size: 25px;
+  }
+  .welcome .welcome-container #hook {
+    font-size: 25px;
+  }
+}
+
 .welcome .welcome-container .welcome-text {
   background-color: #fafafb;
   border: 4px solid white;
