@@ -25,6 +25,8 @@ window.addEventListener('resize', () => {
     logo.classList.add('hidden');
     navBar.classList.add('hidden');
     welcome.classList.add('welcome-mobile-background');
+    welcome.classList.remove('welcome-desktop-background');
+    welcome.style.backgroundPosition = 'center';
     welcomeContainer.style.marginTop = '25px';
   }
 });
@@ -41,6 +43,8 @@ window.addEventListener('resize', () => {
     logo.classList.remove('hidden');
     navBar.classList.remove('hidden');
     welcome.classList.add('welcome-desktop-background');
+    welcome.classList.remove('welcome-mobile-background');
+    welcome.style.backgroundPosition = 'center';
     welcomeContainer.style.marginTop = '100px';
   }
 });
@@ -65,6 +69,8 @@ function pageSetup() {
   if (!mobileView) {
     topNav.classList.remove('hidden');
     topNav.classList.add('flex');
+    flexMargin = window.getComputedStyle(navContainer).marginRight;
+    topNav.style.paddingRight = `${flexMargin}`;
     navToggle.classList.add('hidden');
     rightLinks.classList.add('flex');
     welcome.classList.add('welcome-desktop-background');

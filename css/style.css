@@ -27,7 +27,6 @@ body {
 .top-nav {
   background-color: #4c4d50;
   width: 100%;
-  color: white;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -41,9 +40,11 @@ body {
 }
 
 .top-nav ul li {
-  font-weight: lighter;
-  font-size: 9px;
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
   margin-left: 15px;
+  font-family: "lato", sans-sarif;
   cursor: pointer;
 }
 
@@ -211,10 +212,14 @@ body {
 
 .welcome-desktop-background {
   background-image: url(../img/desktop-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .welcome-mobile-background {
   background-image: url(../img/mobile_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 752px) {

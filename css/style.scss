@@ -34,18 +34,18 @@ body {
 .top-nav {
   background-color: $navTheme;
   width: 100%;
-  color: white;
   justify-content: flex-end;
 
   ul {
-    // display: flex;
     list-style: none;
     align-items: center;
 
     li {
-      font-weight: lighter;
-      font-size: 9px;
+      font-weight: 400;
+      color: white;
+      font-size: 14px;
       margin-left: 15px;
+      font-family: $lato;
       cursor: pointer;
     }
   }
@@ -187,10 +187,14 @@ body {
 
 .welcome-desktop-background {
   background-image: url(../img/desktop-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .welcome-mobile-background {
   background-image: url(../img/mobile_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 // Fixes top-most nav to stay close to alignment with nav-bar
