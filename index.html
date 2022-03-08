@@ -12,8 +12,8 @@
 </head>
 
 <body>
-    <div class="top-nav flex">
-        <ul>
+    <div id="top-nav" class="top-nav">
+        <ul class="flex">
             <li>
                 <div class="facebook-icon"></div>
             </li>
@@ -34,14 +34,9 @@
     </div>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-toggle hamburger hidden">
-                <div class="top-bar"></div>
-                <div class="middle-bar"></div>
-                <div class="bottom-bar"></div>
-            </div>
-            <div class="logo"></div>
+            <div id="logo" class="logo"></div>
             <ul class="right-links">
-                <li>
+                <li class="about-tag">
                     <a href="#">About</a>
                 </li>
                 <li>
@@ -62,8 +57,13 @@
     </nav>
     <section class="welcome">
         <div class="welcome-container">
+            <div class="nav-toggle hamburger hidden">
+                <div class="top-bar"></div>
+                <div class="middle-bar"></div>
+                <div class="bottom-bar"></div>
+            </div>
             <div class="intro">Aaron Keegan <span class="mini">"dot"</span> Dev</div>
-            <h1 class="hook">CREATING INNOVATIVE DESIGNS SINCE <br>2022</h1>
+            <h1 id="hook" class="hook">CREATING INNOVATIVE DESIGNS SINCE <br>2022</h1>
             <div class="welcome-text">My name is Aaron Keegan and I have been a web developer since Fall of 2022. My
                 goal is to create websites that capture the uniqueness of the person who requested it. See my
                 testimonials below
