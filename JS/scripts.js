@@ -10,6 +10,7 @@ const welcome = document.querySelector('.welcome');
 const welcomeContainer = document.querySelector('.welcome-container');
 const cardContainer = document.querySelector('.card-container');
 const projectsCards = document.querySelectorAll('.project-card');
+const cardDescription = document.querySelectorAll('.description');
 
 //  Start - Page setup - sets initial classes for the objects that change between mobile & desktop
 //  This section has window listeners to toggle mobile & desktop view when the screen changes
@@ -29,7 +30,11 @@ window.addEventListener('resize', () => {
     welcome.style.backgroundPosition = 'center';
     welcomeContainer.style.marginTop = '25px';
     cardContainer.classList.add('display-column');
-    projectsCards.forEach((project) => { project.classList.add('display-row') });
+    cardContainer.classList.remove('display-row');
+    projectsCards.forEach((project) => { project.classList.add('display-row'); });
+    projectsCards.forEach((project) => { project.classList.remove('display-column'); });
+    cardDescription.forEach((description) => { description.classList.remove('text-align-center'); });
+    cardDescription.forEach((description) => { description.classList.add('text-align-left'); });
   }
 });
 
@@ -48,6 +53,12 @@ window.addEventListener('resize', () => {
     welcome.classList.remove('welcome-mobile-background');
     welcome.style.backgroundPosition = 'center';
     welcomeContainer.style.marginTop = '100px';
+    projectsCards.forEach((project) => { project.classList.remove('display-row'); });
+    projectsCards.forEach((project) => { project.classList.add('display-column'); });
+    cardContainer.classList.add('display-row');
+    cardContainer.classList.remove('display-column');
+    cardDescription.forEach((description) => { description.classList.add('text-align-center'); });
+    cardDescription.forEach((description) => { description.classList.remove('text-align-left'); });
   }
 });
 
@@ -66,6 +77,12 @@ function pageSetup() {
     welcome.classList.remove('welcome-desktop-background');
     cardContainer.classList.add('display-column');
     welcomeContainer.style.marginTop = '25px';
+    cardContainer.classList.add('display-column');
+    cardContainer.classList.remove('display-row');
+    projectsCards.forEach((project) => { project.classList.add('display-row'); });
+    projectsCards.forEach((project) => { project.classList.remove('display-column'); });
+    cardDescription.forEach((description) => { description.classList.remove('text-align-center'); });
+    cardDescription.forEach((description) => { description.classList.add('text-align-left'); });
   }
 
   if (!mobileView) {
@@ -77,6 +94,12 @@ function pageSetup() {
     rightLinks.classList.add('flex');
     welcome.classList.add('welcome-desktop-background');
     welcome.classList.remove('welcome-mobile-background');
+    projectsCards.forEach((project) => { project.classList.remove('display-row'); });
+    projectsCards.forEach((project) => { project.classList.add('display-column'); });
+    cardContainer.classList.add('display-row');
+    cardContainer.classList.remove('display-column');
+    cardDescription.forEach((description) => { description.classList.remove('text-align-left'); });
+    cardDescription.forEach((description) => { description.classList.add('text-align-center'); });
   }
 }
 

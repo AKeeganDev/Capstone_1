@@ -348,6 +348,18 @@ body {
   z-index: 2;
 }
 
+.display-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.display-row .description {
+  width: 100%;
+}
+
 .my-projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -363,7 +375,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 30px 24px;
+  padding: 100px 24px 120px 24px;
   background-color: #272a32;
   background-image: url(../img/pattern_bg.png);
 }
@@ -386,6 +398,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 900px;
 }
 
 .my-projects .card-container .project-card {
@@ -400,6 +415,9 @@ body {
           align-items: center;
   background-color: rgba(250, 245, 245, 0.2);
   cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .my-projects .card-container .project-card .title {
@@ -418,7 +436,6 @@ body {
   color: #f1f1f1;
   font-family: "Lato", sans-sarif;
   padding: 10px;
-  text-align: left;
 }
 
 .display-column {
@@ -426,18 +443,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.display-row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-}
-
-.display-row .description {
-  width: 100%;
 }
 
 .faq {
@@ -462,4 +467,12 @@ body {
   background-image: url(../img/program_icon_01.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
 }
