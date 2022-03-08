@@ -79,3 +79,56 @@ function pageSetup() {
 }
 
 pageSetup();
+
+// Hamburger & Mobile dropdown
+
+let dropdownIsOpen = false;
+
+const hamburgerBars = document.querySelectorAll('.bar');
+
+let clickCount = 0;
+
+navToggle.addEventListener('click', () => {
+  if (!dropdownIsOpen) dropdownIsOpen = true;
+  else dropdownIsOpen = false;
+  clickCount += 1;
+
+  hamburgerBars.forEach((bar) => {
+    if (clickCount === 1) {
+      if (bar.classList.contains('middle-bar')) {
+        bar.classList.toggle('no-opacity');
+      } else bar.classList.toggle('change');
+    }
+
+    if (clickCount === 2 || clickCount === 4) {
+      if (clickCount === 4) {
+        if (bar.classList.contains('middle-bar')) {
+          bar.classList.remove('no-opacity');
+        } else {
+          bar.classList.remove('change', 'change-full');
+        }
+      }
+
+      if (clickCount === 2) {
+        if (bar.classList.contains('middle-bar')) {
+          bar.classList.toggle('no-opacity');
+        } else {
+          bar.classList.toggle('change-full');
+          bar.classList.toggle('change');
+        }
+      }
+    }
+
+    if (clickCount === 3) {
+      if (bar.classList.contains('middle-bar')) {
+        bar.classList.toggle('no-opacity');
+      } else {
+        bar.classList.toggle('change-full');
+        bar.classList.toggle('change');
+      }
+    }
+  });
+  if (clickCount === 4) {
+    clickCount = 0;
+  }
+});

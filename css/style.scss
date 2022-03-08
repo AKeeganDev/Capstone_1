@@ -27,6 +27,28 @@ body {
   display: none;
 }
 
+.top-bar.change {
+  transform: translateY(15px) rotateZ(45deg);
+}
+
+.top-bar.change-full {
+  transform: translateY(30px) rotateZ(0deg);
+  color: $navTheme;
+}
+
+.bar.bottom-bar.change-full {
+  transform: translateY(-30px) rotateZ(0deg);
+  color: $navTheme;
+}
+
+.bar.bottom-bar.change {
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+.middle-bar.no-opacity {
+  opacity: 0;
+}
+
 .flex {
   display: flex;
 }
@@ -134,6 +156,16 @@ body {
 
 .nav-toggle {
   margin-bottom: 50px;
+}
+
+.bar {
+  transition-duration: 500ms;
+}
+
+.bar.top-bar.change,
+.bar.bottom-bar.change,
+.middle-bar.change {
+  background-color: white;
 }
 
 .welcome {
