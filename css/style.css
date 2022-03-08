@@ -171,11 +171,19 @@ body {
   background-color: #4c4d50;
 }
 
+.hamburger.z-index {
+  z-index: 2;
+}
+
 .nav-toggle {
   margin-bottom: 50px;
+  position: relative;
+  left: 85%;
 }
 
 .bar {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
 }
@@ -280,4 +288,63 @@ body {
   .navbar {
     padding-left: 5rem;
   }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.9);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 80px;
+  padding-top: 0px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 2px solid orange;
+}
+
+.sidenav .sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  width: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.z-index-2 {
+  z-index: 2;
 }

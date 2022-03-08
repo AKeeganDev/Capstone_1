@@ -154,11 +154,18 @@ body {
   }
 }
 
+.hamburger.z-index {
+  z-index: 2;
+}
+
 .nav-toggle {
   margin-bottom: 50px;
+  position: relative;
+  left: 85%;
 }
 
 .bar {
+  transition-delay: 200ms;
   transition-duration: 500ms;
 }
 
@@ -252,4 +259,51 @@ body {
   .navbar {
     padding-left: 5rem;
   }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #111, $alpha: 0.9);
+  backdrop-filter: blur(3px);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-top: 0px;
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 2px solid orange;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  width: 0
+}
+
+.full-width {
+  width: 100%;
+}
+
+.z-index-2 {
+  z-index: 2;
 }
