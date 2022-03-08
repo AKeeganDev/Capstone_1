@@ -44,7 +44,7 @@ body {
   color: white;
   font-size: 14px;
   margin-left: 15px;
-  font-family: "lato", sans-sarif;
+  font-family: "Lato", sans-sarif;
   cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 2rem;
-  font-family: "lato", sans-sarif;
+  font-family: "Lato", sans-sarif;
   position: relative;
 }
 
@@ -96,7 +96,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "lato", sans-sarif;
+  font-family: "Lato", sans-sarif;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -118,7 +118,7 @@ body {
 .nav-container ul li a {
   text-decoration: none;
   color: #a1a1a1;
-  font-family: "lato", sans-sarif;
+  font-family: "Lato", sans-sarif;
 }
 
 .nav-container ul .about-tag {
@@ -175,7 +175,7 @@ body {
 }
 
 .welcome .welcome-container .intro {
-  font-family: "lato", sans-sarif;
+  font-family: "Lato", sans-sarif;
   color: #ec5242;
   font-size: 36px;
 }
@@ -205,7 +205,7 @@ body {
   background-color: #fafafb;
   border: 4px solid white;
   max-width: 875px;
-  font-family: "lato", sans-sarif;
+  font-family: "Lato", sans-sarif;
   color: #4c4d50;
   line-height: 22px;
 }
