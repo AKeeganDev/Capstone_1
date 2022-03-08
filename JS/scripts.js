@@ -8,6 +8,8 @@ const navToggle = document.querySelector('.nav-toggle');
 const navBar = document.querySelector('.navbar');
 const welcome = document.querySelector('.welcome');
 const welcomeContainer = document.querySelector('.welcome-container');
+const cardContainer = document.querySelector('.card-container');
+const projectsCards = document.querySelectorAll('.project-card');
 
 //  Start - Page setup - sets initial classes for the objects that change between mobile & desktop
 //  This section has window listeners to toggle mobile & desktop view when the screen changes
@@ -26,6 +28,8 @@ window.addEventListener('resize', () => {
     welcome.classList.remove('welcome-desktop-background');
     welcome.style.backgroundPosition = 'center';
     welcomeContainer.style.marginTop = '25px';
+    cardContainer.classList.add('display-column');
+    projectsCards.forEach((project) => { project.classList.add('display-row') });
   }
 });
 
@@ -60,6 +64,7 @@ function pageSetup() {
     navBar.classList.add('hidden');
     welcome.classList.add('welcome-mobile-background');
     welcome.classList.remove('welcome-desktop-background');
+    cardContainer.classList.add('display-column');
     welcomeContainer.style.marginTop = '25px';
   }
 

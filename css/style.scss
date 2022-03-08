@@ -306,3 +306,98 @@ body {
 .z-index-2 {
   z-index: 2;
 }
+
+.my-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 24px;
+  background-color: #272a32;
+  background-image: url(../img/pattern_bg.png);
+
+  h2 {
+    font-family: $lato;
+    font-size: 30px;
+    color: white;
+  }
+
+  .theme-divider {
+    width: 40px;
+    height: 2px;
+    background-color: #ef513c;
+    margin-bottom: 30px;
+  }
+
+  .card-container {
+    display: flex;
+    gap: 10px;
+
+    .project-card {
+      padding: 10px;
+      display: flex;
+      text-align: center;
+      min-width: 207px;
+      align-items: center;
+      background-color: rgba($color: rgb(250, 245, 245), $alpha: 0.2);
+      cursor: pointer;
+  
+      .title {
+        color: $orangeTheme;
+        padding: 5px;
+        min-width: 113px;
+      }
+  
+      .project-icon {
+        height: 64px;
+        min-width: 64px;
+        padding: 10px;
+      }
+  
+      .description {
+        color: #f1f1f1;
+        font-family: $lato;
+        padding: 10px;
+        text-align: left;
+      }
+    }
+  }
+  
+}
+
+.display-column {
+  flex-direction: column;
+}
+
+.display-row {
+  flex-direction: row;
+  width: 100%;
+  .description {
+    width: 100%;
+  }
+}
+
+.faq {
+  background-image: url(../img/program_icon_04.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process {
+  background-image: url(../img/program_icon_02.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog {
+  background-image: url(../img/program_icon_03.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.my-work {
+  background-image: url(../img/program_icon_01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

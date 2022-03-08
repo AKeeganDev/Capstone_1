@@ -347,3 +347,119 @@ body {
 .z-index-2 {
   z-index: 2;
 }
+
+.my-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 30px 24px;
+  background-color: #272a32;
+  background-image: url(../img/pattern_bg.png);
+}
+
+.my-projects h2 {
+  font-family: "Lato", sans-sarif;
+  font-size: 30px;
+  color: white;
+}
+
+.my-projects .theme-divider {
+  width: 40px;
+  height: 2px;
+  background-color: #ef513c;
+  margin-bottom: 30px;
+}
+
+.my-projects .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.my-projects .card-container .project-card {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  min-width: 207px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(250, 245, 245, 0.2);
+  cursor: pointer;
+}
+
+.my-projects .card-container .project-card .title {
+  color: #ec5242;
+  padding: 5px;
+  min-width: 113px;
+}
+
+.my-projects .card-container .project-card .project-icon {
+  height: 64px;
+  min-width: 64px;
+  padding: 10px;
+}
+
+.my-projects .card-container .project-card .description {
+  color: #f1f1f1;
+  font-family: "Lato", sans-sarif;
+  padding: 10px;
+  text-align: left;
+}
+
+.display-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.display-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.display-row .description {
+  width: 100%;
+}
+
+.faq {
+  background-image: url(../img/program_icon_04.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process {
+  background-image: url(../img/program_icon_02.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog {
+  background-image: url(../img/program_icon_03.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.my-work {
+  background-image: url(../img/program_icon_01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
