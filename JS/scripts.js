@@ -78,7 +78,6 @@ function pageSetup() {
 pageSetup();
 
 // Hamburger & Mobile Sidebar Menu code
-
 let sidebarIsOpen = false;
 
 const hamburgerBars = document.querySelectorAll('.bar');
@@ -136,7 +135,8 @@ navToggle.addEventListener('click', () => {
   else sidebarIsOpen = false;
   toggleMenu();
 });
-// Fixes the hamburger and modal overlay when the menu is open and the screen resizes to Desktop size
+// Fixes the hamburger and modal overlay when the menu is
+// open and the screen resizes to Desktop size
 window.addEventListener('resize', () => {
   if (window.innerWidth > 677 && sidebarIsOpen) {
     sidebarIsOpen = false;
