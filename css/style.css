@@ -50,37 +50,6 @@ body {
   display: flex;
 }
 
-.top-nav {
-  background-color: #4c4d50;
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.top-nav ul {
-  list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-right: 18px;
-  margin: 11px;
-}
-
-.top-nav ul li {
-  font-weight: 400;
-  color: white;
-  font-size: 14px;
-  margin-left: 15px;
-  font-family: "Lato", sans-sarif;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.top-nav ul li:hover {
-  outline: 2px solid white;
-}
-
 .facebook-icon {
   height: 18px;
   width: 9px;
@@ -201,6 +170,16 @@ body {
   text-decoration: none;
 }
 
+.contact {
+  outline: 4px solid #ec5242;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.contact a {
+  color: #ec5242;
+}
+
 .nav-container {
   background-color: white;
   max-width: 1200px;
@@ -256,27 +235,92 @@ body {
   background-color: #ec5242;
 }
 
-.nav-container ul .contact a {
-  font-weight: 400;
-  color: #ec5242;
-}
-
 .nav-container ul .about-tag {
   margin-left: 0;
 }
 
-.contact {
-  outline: 4px solid #ec5242;
-  padding: 10px;
-  margin-left: 5px;
+.sponsors {
+  background-color: #272a31;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 12px 50px 20px;
 }
 
-.contact a {
-  color: #ec5242;
+.sponsors .sponsor-divider {
+  width: 30px;
+  height: 4px;
+  background-color: #ff4f38;
+  margin-bottom: 20px;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.sponsors ul {
+  width: 100%;
+  max-width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font: "Lato", sans-sarif;
+  padding: 0;
+  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsors ul li {
+  text-align: center;
+  min-width: 113px;
+  font-family: "Lato", sans-sarif;
+  font-size: 20px;
+}
+
+.top-nav {
+  background-color: #4c4d50;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.top-nav ul {
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 18px;
+  margin: 11px;
+}
+
+.top-nav ul li {
+  font-weight: 400;
+  color: white;
+  font-size: 14px;
+  margin-left: 15px;
+  font-family: "Lato", sans-sarif;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.top-nav ul li:hover {
+  outline: 2px solid white;
 }
 
 .right-links {
@@ -459,6 +503,10 @@ body {
   width: 100%;
 }
 
+.project-card:hover {
+  outline: 2px solid white;
+}
+
 .my-projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,10 +583,6 @@ body {
   color: #f1f1f1;
   font-family: "Lato", sans-sarif;
   padding: 10px;
-}
-
-.project-card:hover {
-  outline: 2px solid white;
 }
 
 .display-column {
@@ -758,59 +802,6 @@ body {
 
 .index-footer .logo {
   margin-bottom: -5px;
-}
-
-.sponsors {
-  background-color: #272a31;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 30px 12px 50px 20px;
-}
-
-.sponsors .sponsor-divider {
-  width: 30px;
-  height: 4px;
-  background-color: #ff4f38;
-  margin-bottom: 20px;
-}
-
-.sponsors ul {
-  width: 100%;
-  max-width: 1050px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font: "Lato", sans-sarif;
-  padding: 0;
-  margin: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.sponsors ul li {
-  text-align: center;
-  min-width: 113px;
-  font-family: "Lato", sans-sarif;
-  font-size: 20px;
 }
 
 .about-container {
