@@ -1,11 +1,15 @@
-# Portfolio
+# Microverse Capstone Project
 
 > This Repo is my Capstone Project. The purpose of this project is to test my skills with CSS, HTML, and Javascript
 
 Specific tasks include:
 
--Utilizing Flexbox to organize the structure structure and layout of my HTML elements, setting backgrounds, using image files, using custom fonts, utilizing Javascript
+-Utilizing Flexbox to organize the structure structure and layout of my HTML elements, setting backgrounds, using image files, using custom fonts, utilizing Javascript DOM manipulation
 
+## License & misc.
+
+Original design idea by Cindy Shin in Behance: (https://www.behance.net/adagio07)
+link to lisence of design: (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
 ## Built With
 
@@ -23,7 +27,7 @@ Specific tasks include:
 
 ## Live Demo
 
-(No demo available at this time)
+https://akeegandev.github.io/Capstone_1/index.html
 
 ## Show your support
 
