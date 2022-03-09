@@ -64,6 +64,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 18px;
+  margin: 11px;
 }
 
 .top-nav ul li {
@@ -73,6 +74,11 @@ body {
   margin-left: 15px;
   font-family: "Lato", sans-sarif;
   cursor: pointer;
+  padding: 5px;
+}
+
+.top-nav ul li:hover {
+  outline: 2px solid white;
 }
 
 .facebook-icon {
@@ -231,6 +237,10 @@ body {
   text-decoration: none;
   color: #a1a1a1;
   font-family: "Lato", sans-sarif;
+}
+
+.nav-container ul li a:hover {
+  color: #272a31;
 }
 
 .nav-container ul li .contact {
@@ -725,6 +735,82 @@ body {
 
 .footer .logo {
   margin-bottom: -5px;
+}
+
+.index-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 15px 12px 10px 12px;
+  background-color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 12px;
+  color: #272a31;
+}
+
+.index-footer .logo {
+  margin-bottom: -5px;
+}
+
+.sponsors {
+  background-color: #272a31;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 12px 50px 20px;
+}
+
+.sponsors .sponsor-divider {
+  width: 30px;
+  height: 4px;
+  background-color: #ff4f38;
+  margin-bottom: 20px;
+}
+
+.sponsors ul {
+  width: 100%;
+  max-width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font: "Lato", sans-sarif;
+  padding: 0;
+  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsors ul li {
+  text-align: center;
+  min-width: 113px;
+  font-family: "Lato", sans-sarif;
+  font-size: 20px;
 }
 
 .about-container {
