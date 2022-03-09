@@ -414,8 +414,21 @@ body {
 
 #testimonials {
   display: flex;
-  align-content: center;
+  align-items: center;
   padding: 80px 24px;
+  flex-direction: column;
+
+  h2 {
+    font-family: $lato;
+    font-size: 30px;
+  }
+
+  .divider {
+    min-width: 35px;
+    min-height: 3px;
+    background-color: #ec5242;
+    margin-bottom: 30px;
+  }
 
   .testimonial-container {
     width: 100%;
@@ -469,6 +482,17 @@ body {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 594px) {
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .picture {
+    background-position-x: center;
   }
 }
 

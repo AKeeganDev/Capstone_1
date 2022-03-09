@@ -481,9 +481,26 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 80px 24px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#testimonials h2 {
+  font-family: "Lato", sans-sarif;
+  font-size: 30px;
+}
+
+#testimonials .divider {
+  min-width: 35px;
+  min-height: 3px;
+  background-color: #ec5242;
+  margin-bottom: 30px;
 }
 
 #testimonials .testimonial-container {
@@ -549,6 +566,19 @@ body {
   padding-top: 10px;
   line-height: 24px;
   max-width: 320px;
+}
+
+@media screen and (max-width: 594px) {
+  .testimonial {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .picture {
+    background-position-x: center;
+  }
 }
 
 .client1 {
