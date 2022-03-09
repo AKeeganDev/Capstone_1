@@ -140,6 +140,34 @@ body {
   gap: 80px;
 }
 
+.sidenav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidenav ul .side-link:hover {
+  color: lightsalmon;
+}
+
+.sidenav li {
+  width: 230px;
+}
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -356,7 +384,7 @@ body {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 752px) {
+@media screen and (min-width: 768px) {
   .navbar {
     padding-left: 5rem;
   }
@@ -463,6 +491,10 @@ body {
   color: #f1f1f1;
   font-family: "Lato", sans-sarif;
   padding: 10px;
+}
+
+.project-card:hover {
+  outline: 2px solid white;
 }
 
 .display-column {

@@ -125,6 +125,25 @@ body {
   align-items: center;
   gap: 80px;
 
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+    .side-link:hover {
+      color: lightsalmon;
+    }
+  }
+
+  li {
+    width: 230px;
+  }
+
   a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -311,7 +330,7 @@ body {
 }
 
 // Fixes top-most nav to stay close to alignment with nav-bar
-@media screen and (min-width: 752px) {
+@media screen and (min-width: 768px) {
   .navbar {
     padding-left: 5rem;
   }
@@ -397,6 +416,10 @@ body {
       }
     }
   }
+}
+
+.project-card:hover {
+  outline: 2px solid white;
 }
 
 .display-column {
