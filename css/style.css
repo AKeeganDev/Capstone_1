@@ -610,3 +610,26 @@ body {
   background-image: url(../img/speaker_06.png);
   background-repeat: no-repeat;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 15px 12px 10px 12px;
+  background-color: #272a31;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.footer .logo {
+  margin-bottom: -5px;
+}

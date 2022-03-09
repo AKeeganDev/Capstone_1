@@ -525,3 +525,21 @@ body {
   background-image: url(../img/speaker_06.png);
   background-repeat: no-repeat;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 12px 10px 12px;
+  background-color: $darkTheme;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 12px;
+
+  color: white;
+
+  .logo {
+    margin-bottom: -5px;
+  }
+}
