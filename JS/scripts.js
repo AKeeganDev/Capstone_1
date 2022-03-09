@@ -17,7 +17,7 @@ const cardDescription = document.querySelectorAll('.description');
 let flexMargin = window.getComputedStyle(navContainer).marginRight;
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 786) {
+  if (window.innerWidth < 769) {
     topNav.classList.remove('flex');
     topNav.classList.add('hidden');
     navToggle.classList.add('flex');
@@ -39,7 +39,7 @@ window.addEventListener('resize', () => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth > 786) {
+  if (window.innerWidth > 768) {
     flexMargin = window.getComputedStyle(navContainer).marginRight;
     topNav.style.paddingRight = `${flexMargin}`;
     topNav.classList.remove('hidden');
