@@ -4,6 +4,7 @@ $navTheme: #4c4d50;
 $lightgrey: #4c4d50;
 $orangeTheme: #ec5242;
 $bright: #fafafb;
+$offGrey: #d3d3d3;
 
 $cocogoose: 'cocogoose', sans-sarif;
 $lato: 'Lato', sans-sarif;
@@ -135,6 +136,17 @@ body {
   }
 }
 
+.workshop-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
 .nav-container {
   background-color: white;
   max-width: 1200px;
@@ -206,6 +218,17 @@ body {
 .bar.bottom-bar.change,
 .middle-bar.change {
   background-color: white;
+}
+
+.about-header {
+  font-size: 42px;
+  color: #ec5242;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  .mini {
+    font-size: 20px;
+  }
 }
 
 .welcome {
@@ -536,10 +559,82 @@ body {
   font-family: sans-serif;
   text-align: center;
   font-size: 12px;
-
   color: white;
 
   .logo {
     margin-bottom: -5px;
   }
+}
+
+// About.html
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-divider {
+  min-width: 30px;
+  min-height: 3px;
+  background-color: $offGrey;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-family: $lato;
+  max-width: 900px;
+  background-color: white;
+  border: 1px solid $offGrey;
+  padding: 25px 60px;
+  margin-bottom: 40px;
+}
+
+.workshops {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $lato;
+  border-top: 2px solid $offGrey;
+  padding: 0 12px 40px;
+}
+
+.workshop-text {
+  font-family: $lato;
+  max-width: 900px;
+  background-color: white;
+  border: 1px solid $offGrey;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+}
+
+.workshop1,
+.workshop2 {
+  min-width: 316px;
+  min-height: 175px;
+  background-color: #ec5242;
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-family: $cocogoose;
+    background-color: darkblue;
+  }
+}
+
+.workshop1 {
+  background-image: url(../img/workshop1.jpg);
+  background-size: cover;
+}
+
+.workshop2 {
+  background-image: url(../img/workshop2.jpg);
+  background-size: cover;
 }

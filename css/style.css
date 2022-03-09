@@ -151,6 +151,22 @@ body {
   border-bottom: 2px solid orange;
 }
 
+.workshop-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.workshop-images a {
+  text-decoration: none;
+}
+
 .nav-container {
   background-color: white;
   max-width: 1200px;
@@ -237,6 +253,17 @@ body {
 .bar.bottom-bar.change,
 .middle-bar.change {
   background-color: white;
+}
+
+.about-header {
+  font-size: 42px;
+  color: #ec5242;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about-header .mini {
+  font-size: 20px;
 }
 
 .welcome {
@@ -632,4 +659,100 @@ body {
 
 .footer .logo {
   margin-bottom: -5px;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-divider {
+  min-width: 30px;
+  min-height: 3px;
+  background-color: #d3d3d3;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-family: "Lato", sans-sarif;
+  max-width: 900px;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  padding: 25px 60px;
+  margin-bottom: 40px;
+}
+
+.workshops {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "Lato", sans-sarif;
+  border-top: 2px solid #d3d3d3;
+  padding: 0 12px 40px;
+}
+
+.workshop-text {
+  font-family: "Lato", sans-sarif;
+  max-width: 900px;
+  background-color: white;
+  border: 1px solid #d3d3d3;
+  padding: 25px 30px;
+  margin-bottom: 40px;
+}
+
+.workshop1,
+.workshop2 {
+  min-width: 316px;
+  min-height: 175px;
+  background-color: #ec5242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workshop1 h3,
+.workshop2 h3 {
+  font-family: "cocogoose", sans-sarif;
+  background-color: darkblue;
+}
+
+.workshop1 {
+  background-image: url(../img/workshop1.jpg);
+  background-size: cover;
+}
+
+.workshop2 {
+  background-image: url(../img/workshop2.jpg);
+  background-size: cover;
 }
