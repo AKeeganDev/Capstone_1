@@ -192,6 +192,26 @@ body {
         color: #a1a1a1;
         font-family: $lato;
       }
+
+      .contact {
+        background-color: white;
+        font-weight: 900;
+        border-style: none;
+        color: $orangeTheme;
+        font-size: 15px;
+      }
+
+      .contact:hover {
+        color: white;
+        background-color: $orangeTheme;
+      }
+    }
+
+    .contact {
+      a {
+        font-weight: 400;
+        color: $orangeTheme;
+      }
     }
 
     .about-tag {
@@ -200,8 +220,22 @@ body {
   }
 }
 
+.contact {
+  outline: 4px solid $orangeTheme;
+  padding: 10px;
+  margin-left: 5px;
+
+  a {
+    color: $orangeTheme;
+  }
+}
+
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.right-links {
+  align-items: center;
 }
 
 .hamburger {
