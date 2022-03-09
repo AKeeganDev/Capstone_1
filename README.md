@@ -6,7 +6,7 @@ Specific tasks include:
 
 -Utilizing Flexbox to organize the structure structure and layout of my HTML elements, setting backgrounds, using image files, using custom fonts, utilizing Javascript DOM manipulation
 
-##License & misc.
+## License & misc.
 
 Original design idea by Cindy Shin in Behance: (https://www.behance.net/adagio07)
 link to lisence of design: (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
