@@ -446,13 +446,13 @@ body {
 }
 
 .faq {
-  background-image: url(../img/program_icon_04.png);
+  background-image: url(../img/program_icon_05.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .process {
-  background-image: url(../img/program_icon_02.png);
+  background-image: url(../img/program_icon_04.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -464,7 +464,7 @@ body {
 }
 
 .my-work {
-  background-image: url(../img/program_icon_01.png);
+  background-image: url(../img/program_icon_02.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -475,4 +475,108 @@ body {
 
 .text-align-left {
   text-align: left;
+}
+
+#testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 80px 24px;
+}
+
+#testimonials .testimonial-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#testimonials .testimonial-container .testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 540px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#testimonials .testimonial-container .testimonial .picture {
+  min-width: 177px;
+  height: 178px;
+  margin-right: 10px;
+}
+
+#testimonials .testimonial-container .testimonial .client-dialogue {
+  margin-left: 25px;
+}
+
+#testimonials .testimonial-container .testimonial .client-dialogue .lead-quote {
+  font-family: "Lato", sans-sarif;
+  color: #272a31;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#testimonials .testimonial-container .testimonial .client-dialogue .name {
+  font-family: "Lato", sans-sarif;
+  color: #272a31;
+  font-size: 14px;
+}
+
+#testimonials .testimonial-container .testimonial .client-dialogue .occupation {
+  font-family: "Lato", sans-sarif;
+  color: #ff4f38;
+  font-size: 13px;
+}
+
+#testimonials .testimonial-container .testimonial .client-dialogue .dialogue {
+  font-family: "Lato", sans-sarif;
+  color: #272a31;
+  font-size: 14px;
+  padding-top: 10px;
+  line-height: 24px;
+  max-width: 320px;
+}
+
+.client1 {
+  background-image: url(../img/speaker_01.png);
+  background-repeat: no-repeat;
+}
+
+.client2 {
+  background-image: url(../img/speaker_02.png);
+  background-repeat: no-repeat;
+}
+
+.client3 {
+  background-image: url(../img/speaker_03.png);
+  background-repeat: no-repeat;
+}
+
+.client4 {
+  background-image: url(../img/speaker_04.png);
+  background-repeat: no-repeat;
+}
+
+.client5 {
+  background-image: url(../img/speaker_05.png);
+  background-repeat: no-repeat;
+}
+
+.client6 {
+  background-image: url(../img/speaker_06.png);
+  background-repeat: no-repeat;
 }

@@ -171,3 +171,71 @@ window.addEventListener('resize', () => {
     toggleMenu();
   }
 });
+
+// JS for the testimonial DIVs
+
+const clients = [
+  {
+    photo: '../img/speaker_01.png',
+    quote: '"True Genius!"',
+    name: 'John Doe',
+    title: 'Executive Doe',
+    dialogue: '"Some markup text complimenting Aaron\'s incredible web-design skills. Cheers to whoever reads this!"',
+  },
+  {
+    photo: '../img/speaker_02.png',
+    quote: '"Remarkable.."',
+    name: 'Jon D\'oh',
+    title: 'Super D\'oh',
+    dialogue: '"I would bet both my turtleneck AND my matching-color computer chair on his work. Aaron is a true professional"',
+  },
+  {
+    photo: '../img/speaker_03.png',
+    quote: '"WOW!"',
+    name: 'Song Dough',
+    title: 'Chief Operating Doe',
+    dialogue: ' "There are legends.. and then there is Aaron. Aaron is so cool!"',
+  },
+  {
+    photo: '../img/speaker_04.png',
+    quote: '"Exclamatory Words!"',
+    name: 'Jane Doe',
+    title: 'Not Related to John Doe',
+    dialogue: '"Though me and John are not related or affiliated in any way, we do agree that Aaron is great!"',
+  },
+  {
+    photo: '../img/speaker_05.png',
+    quote: '"Superb"',
+    name: 'Jayne (The Doe) Dohh',
+    title: 'High-level Occupation',
+    dialogue: ' "If I could launch the site that Aaron made in 20 domains I would, but the world can not handle that much perfection."',
+  },
+  {
+    photo: '../img/speaker_06.png',
+    quote: '"Sweet Beans!"',
+    name: 'Jonathan D\'d\'doe',
+    title: 'The First 2 "D"s Are Silent',
+    dialogue: '"Thank you for reading all of these. I hope they made you laugh!"',
+  },
+];
+
+function fillInClients() {
+  const clientContainer = document.querySelector('#container');
+  let counter = 1;
+  clients.forEach((client) => {
+    const markup = `
+      <div class="testimonial client${counter}">
+        <div class="picture"></div>
+        <div class="client-dialogue">
+            <div class="lead-quote">${client.quote}</div>
+            <div class="name">${client.name}</div>
+            <div class="occupation">${client.title}</div>
+            <div class="dialogue">${client.dialogue}</div>
+        </div>
+      </div>`;
+    counter += 1;
+    clientContainer.innerHTML += markup;
+  });
+}
+
+fillInClients();
