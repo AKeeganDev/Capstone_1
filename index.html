@@ -5,12 +5,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Aaron Keegan Dev</title>
 </head>
 
-
 <body>
-
+    <div id="top-nav" class="top-nav">
+        <ul class="flex">
+            <li>
+                <div class="facebook-icon"></div>
+            </li>
+            <li>
+                <div class="twitter-icon"></div>
+            </li>
+            <li>
+                Logout
+            </li>
+            <li>
+                My Page
+            </li>
+            <li>
+                Language
+            </li>
+            <li></li>
+        </ul>
+    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#">
+                <div id="logo" class="logo"></div>
+            </a>
+            <ul class="right-links">
+                <li class="about-tag">
+                    <a href="./pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Clients</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li><button class="contact" type="button" onclick="location.href='./pages/about.html'">Contact</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="sidenav overflow-hidden">
+        <ul>
+            <li><a class="side-link" href="./pages/about.html">About</a></li>
+            <li><a class="side-link" href="#">Services</a></li>
+            <li><a class="side-link" href="#">Clients</a></li>
+            <li><a class="side-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+    <section id="welcome" class="welcome">
+        <div class="welcome-container">
+            <div class="nav-toggle hamburger hidden">
+                <div class="bar top-bar"></div>
+                <div class="bar middle-bar"></div>
+                <div class="bar bottom-bar"></div>
+            </div>
+            <div class="intro">Aaron Keegan <span class="mini">"dot"</span> Dev</div>
+            <h1 id="hook" class="hook">CREATING INNOVATIVE DESIGNS SINCE <br>2022</h1>
+            <div class="welcome-text">My name is Aaron Keegan and I have been a web developer since Fall of 2022. My
+                goal is to create websites that capture the uniqueness of the person who requested it. See my
+                testimonials below
+                to see what my clients have said about my work</div>
+        </div>
+    </section>
+    <section id="more-from-me" class="my-projects">
+        <h2>More from me</h2>
+        <div class="theme-divider"></div>
+        <div class="card-container">
+            <div class="project-card">
+                <div class="project-icon my-work"></div>
+                <div class="title">My Work</div>
+                <div class="description">Click here to see my recent works</div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon blog"></div>
+                <div class="title">My Forum</div>
+                <div class="description">Click here to view my community forum
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon process"></div>
+                <div class="title">My Process</div>
+                <div class="description">Click here to learn about my design process</div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon faq"></div>
+                <div class="title">FAQ</div>
+                <div class="description">Click here see my FAQ (frequently asked questions)</div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <div class="divider"></div>
+        <div id="container" class="testimonial-container"></div>
+    </section>
+    <section id="sponsors" class="sponsors">
+        <h3 class="sponsor-heading">Partners</h3>
+        <div class="sponsor-divider"></div>
+        <ul class="sponsor-list">
+            <li>Deschutes Brewery</li>
+            <li>Bowers & Wilkins</li>
+            <li>The Duce</li>
+            <li>Steam</li>
+            <li>Taylor Guitars</li>
+        </ul>
+    </section>
+    <footer class="index-footer">
+        <a href="#">
+            <div class="logo"></div>
+        </a>
+        <div class="copyright">
+            <div>2022 Some Legal Words Here</div>
+            <div>All rights.... reserved!</div>
+        </div>
+    </footer>
+    <script src="./JS/scripts.js"></script>
 </body>
 
 </html>

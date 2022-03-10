@@ -27,7 +27,7 @@ link to lisence of design: (https://creativecommons.org/licenses/by-nc/4.0/legal
 
 ## Live Demo
 
-(No demo available at this time)
+https://akeegandev.github.io/Capstone_1/index.html
 
 ## Show your support
 
